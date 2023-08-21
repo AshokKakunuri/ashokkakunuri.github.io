@@ -1,0 +1,461 @@
+baseURL: "https://ashokkakunuri.github.io"
+languageCode: "en-us"
+title: "Ashok"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Portfolio"
+  description: Ashok's Portfolio
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: true
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+    darkmode:
+      # textColor: '#ff0000'
+      secondaryTextColor:
+      backgroundColor:
+      secondaryBackgroundColor:
+      primaryColor: 
+      secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    # brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Ashok Kakunuri"
+    subtitle: "I'm a versatile Software Developer"
+    content: "Passionate about leveraging data science and AI to create innovative software solutions. Skilled in web and mobile app development, with a focus on delivering user-centric experiences. Eager to collaborate on projects that make a positive impact and drive technological advancements."
+    image: /images/hero.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/AshokKakunuri
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/ashok-kakunuri/
+      
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I'm a Masters in Computer Science student at University of Rochester and am an aspiring software developer with a passion for Machine Learning. I have a background in computer science , and I have a strong interest in the intersection of technology and day-to-day lifestyle. 
+
+      
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Programming Languages : Python, Java, C, JavaScript, Dart, R, SQL"
+        - "Web Technologies : ReactJS, HTML, CSS, PHP, Django, JSON,NodeJS"
+        - "Databases : Oracle, MySQL, Firebase, DynamoBD, S3, RDS, AWS Elasticache"
+        - "Technologies and Tools : SpringBoot,REST, CICD, Jenkins, SQL Server, SoapUI, GIT, VSCode, Jupyterlab, AWS Sagemaker, Tableau"
+        -  "DataScience and AI : Machine Learning, Neural Networks, NLP, Statistical Modelling"
+        - "Big Data & Cloud: AWS, Databricks, Spark, Hive, Hadoop"
+        # - "Node"
+        # - "Express"
+         
+
+
+
+
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Mobile Application Developer Intern"
+        company: "Credit Acceptance"
+        companyUrl: "https://www.creditacceptance.com/"
+        date: "May 20223 - present"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://apps.apple.com/us/app/credit-acceptance-mobile/id1600112247"
+        content: | 
+          -	Enhanced 15% of the UI/UX of an existing end-to-end Credit Acceptance Mobile application by implementing several UI changes, resulting in a more visually appealing and user-friendly interface using Flutter.
+          -	Successfully tackled and resolved various defects and bugs within the application, showcasing a meticulous and proactive approach to troubleshooting.
+          -	Spearheaded the integration of Firebase in-app messaging and Firebase deep linking features, which enhanced the functionality and increased the user engagement by 30%.
+
+        
+
+      - job: "Database Assistant"
+        company: "University of Rochester"
+        companyUrl: "https://www.urmc.rochester.edu/"
+        date: "Jan 2023 - Apr 2023"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          - Designed and implemented a database solution that integrated data retrieved from the Medhub API with data from the Clarity Database using SQL to achieve a 70% reduction in the time required for evaluating residents.
+      
+      - job: "Software Engineer II"
+        company: "JPMorganChase"
+        companyUrl: "https://www.jpmorganchase.com/"
+        date: "Aug 2020 - Aug 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          - Developed an advanced RESTful API utilizing Spring Boot and MySQL, delivering a high-performance solution for seamless functional ID management and integration across multiple bots.
+          - Designed and implemented data pipelines leveraging RPA tools like WinAutomation and UiPath to automate data ingestion and processing for huge amounts of data, resulting in annual savings of $2 million for the company.
+          - Led the development team in creating a data-driven mobile application, UMEED, for the Umeed NGO as part of JPMorgan Chase Force for Good 2020 initiative. The application utilized data analysis and visualization techniques to streamline the organization's bookkeeping process, resulting in a 70% reduction in manual effort.
+          
+      # - job: "Software Engineer II"
+      #   company: "JPMorganChase&Co."
+      #   companyUrl: "https://www.jpmorganchase.com/"
+      #   date: "Aug 2020 - Aug 2022"
+      #   info:
+      #     enable: true
+      #   featuredLink:
+      #     enable: false
+      #     url: "https://example.com"
+      #   content: |
+      #     - Developed an advanced RESTful API utilizing Spring Boot and MySQL, delivering a high-performance solution for seamless functional ID management and integration across multiple bots.
+      #     - Designed and implemented data pipelines leveraging RPA tools like WinAutomation and UiPath to automate data ingestion and processing for huge amounts of data, resulting in annual savings of $2 million for the company.
+      #     - Led the development team in creating a data-driven mobile application, UMEED, for the Umeed NGO as part of JPMorgan Chase Force for Good 2020 initiative. The application utilized data analysis and visualization techniques to streamline the organization's bookkeeping process, resulting in a 70% reduction in manual effort.
+          
+      - job: "Software Intern"
+        company: "JPMorganChase"
+        companyUrl: "https://www.jpmorganchase.com/"
+        date: "Jan 2020 - Jun 2020"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        content: |
+          - Contributed to a proof of concept for an anomaly detection project on JPMC private cloud OMNI AI and achieved an accuracy of 84% using several classifier models including Random Forest and ensemble classifiers.
+          - Optimized data processing and analysis using PySpark and Hive on large-scale datasets, resulting in a 50% increase in efficiency and a 20% acceleration in query running time.
+
+      # - job: "Product Designer"
+      #   company: "Google"
+      #   companyUrl: "https://example.com"
+      #   date: "Feb 2016 - Mar 2017"
+      #   content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "MS Computer Science"
+        school:
+          name: "University of Rochester"
+          url: "https://www.rochester.edu/"
+        date: "2022 - 2023"
+        GPA: "3.8 out of 4.0"
+        content: |-
+            - Secured a 50% merit scholarship which contributed to the funding of my education.
+            - Was teaching assistant for Data Analytics with R, Option and Futures with Python and Predictive analysis with Python.
+            - Courses : Machine Learning, Deep Learning, Design and Analysis of Efficient Algorithms, Data Mining, Data Science at Scale, Database systems.
+          # Extracurricular Activities
+          #   - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          #   - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+      - title: "Bachelor of Technology in Computer Science"
+        school:
+          name: "Chaitanya Bharathi Institute of Technology"
+          url: "https://www.cbit.ac.in/"
+        date: "2016 - 2020"
+        GPA: "3.8 out of 4.0"
+        content: |-
+            - Lead Author for the research presentation "AdaBoost for Parkinson's Disease Detection using Robust Scaler and SFS from Acoustic Features” at Smart Technologies, Communication and Robotics (STCR).
+            
+            Extracurricular Activities:
+            - Lead Developer : We ranked 1st in Kony Hackathon 2020 , a 24-hour hackathon conducted by the Kony organization which secured me an internship in the organization.
+            - CoFounder : Started the club C4,CBIT competitive coding club to promote competitive coding and problem solving skills in computer science undergrad students.
+            - Coordinator : Organized and Headed the event Fast and Furious in the University's Tech fest Sudhee -2020.
+            - Badminton Player : Runner up in Intra College Badminton Singles tournament organization as part of University's annual sports day.
+
+        # featuredLink:
+        #   enable: true
+        #   name: "My academic record"
+        #   url: "https://example.com"
+      # - title: "High School"
+      #   school:
+      #     name: "Thomas Jefferson High School for Science and Technology."
+      #     url: "https://example.org"
+      #   GPA: "4.2 out of 5.0"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: AWS Developer Associate
+        # image: /images/hero.png
+        content: This certification validates my expertise in designing, deploying, and maintaining applications on the AWS platform.
+        url: https://www.credly.com/badges/ba6771db-5dc3-4ae6-9358-89916ae3ab64/public_url
+      - title: AWS Cloud Practioner
+        content: This certification showcases my foundational understanding of AWS Cloud concepts, services, security, and pricing.
+        url: https://www.credly.com/badges/4e73e0cc-f8ac-48ae-9839-9d818c3262eb/public_url
+      - title: IEEE Research Presentaion
+        content: Published a research paper on "AdaBoost for Parkinson's Disease Detection using Robust Scaler and SFS from Acoustic Features".
+        url: "https://ieeexplore.ieee.org/document/9588906"
+      # - title: Microsoft Imagine Runner
+      #   content: We are developed a product which can help others.
+      # - title: Google Summer of Code
+      #   content: Contributed to a open source project.
+      #   url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Access Chatgpt Anywhere
+        content: A highly available solution where anyone can use ChatGPT without internet. Developed a multilingual SMS solution with Twilio, Node.js, OpenAI API, and Google TranslateAPI, hosted on AWS Lambda, enabling seamless communication for users via SMS.
+        image:  /images/ChatGPT.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "NodeJS"
+          - "Twilio"
+          - "Chatgpt"
+        # links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      
+      - title: SustainFuture NGO Website
+        content: Created a NGO website with HTML, PHP and MYSQL. Can track the activities done by volunteers and Donors in an accurate way.
+        image: /images/sustainFuture.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "MySQL"
+          - "Database Management"
+          - "PHP"
+          - "HTML"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Analysis of Negative Sentiment in US political Twitter Space
+        content: Analyzed the toxicity in the political twitter space during various major events using a Natural Language Processing algorithm, Vader, on nearly 450,000 political and non-political tweets retrieved from Twitter using the TweepyAPI, over a 24-month period (2021-2022).
+        image: /images/twitter.png
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
+        badges:
+          - "NLP"
+          - "Vader"
+          - "tweepy"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/converter
+
+      - title: Foreign Object Detection in X-rays using YOLOv5 and YOLOv6
+        content: Trained the object detection algorithm YOLO (You Only Look Once) in pytorch on medical x-ray dataset, achieving a mAP50 of 69.6 percent with YOLO v5 and 67 percent with YOLO v6 and analyzed the results and observations between them.
+        image: /images/yolo6.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "YOLO"
+          - "Deep Learning"
+          - "pyTorch"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Detection of Anomalous Behavior in a Network using Deep Learning
+        content: Developed several Deep Learning and Machine learning classification techniques to detect the attacks in a network.Deep Learning algorithms used - LSTM, GRU, RNN, FNN and dataset used is UNSW1_NB15 dataset which consists of 175,341 records with 9 types of network attacks.
+        image: /images/detection.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "LSTM"
+          - "GRU"
+          - "Deep Learning"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
+
+      - title: Umeed Mobile Application
+        content: Developed an user friendly and robust mobile application for the Umeed NGO as part of JPMorganChase Force for Good 2020 initiative. Built the application UI using Flutter framework ,REST framework for the middleware and SQL database for the data management.
+        image: /images/umeed.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Flutter"
+          - "Dart"
+          - "REST API"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: vkakunur@ur.rochester.edu
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
