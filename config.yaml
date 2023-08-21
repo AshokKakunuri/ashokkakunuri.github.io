@@ -121,16 +121,16 @@ params:
     title: "Ashok Kakunuri"
     subtitle: "I'm a versatile Software Developer"
     content: "Passionate about leveraging data science and AI to create innovative software solutions. Skilled in web and mobile app development, with a focus on delivering user-centric experiences. Eager to collaborate on projects that make a positive impact and drive technological advancements."
-    image: /images/hero.png
+    image: /images/hero3.jpg
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+      roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "#"
-      download: true
-      newPage: false
+      url: "https://drive.google.com/file/d/156pISLhtYPbu5bl9ldzHQVBc7abp5kua/view?usp=sharing"
+      download: false
+      newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -299,13 +299,15 @@ params:
     # title: "Custom Name"
     items:
       - title: AWS Developer Associate
-        # image: /images/hero.png
+        image: /images/aws-certified-developer-associate.png
         content: This certification validates my expertise in designing, deploying, and maintaining applications on the AWS platform.
         url: https://www.credly.com/badges/ba6771db-5dc3-4ae6-9358-89916ae3ab64/public_url
       - title: AWS Cloud Practioner
+        image: /images/aws-cp.png
         content: This certification showcases my foundational understanding of AWS Cloud concepts, services, security, and pricing.
         url: https://www.credly.com/badges/4e73e0cc-f8ac-48ae-9839-9d818c3262eb/public_url
       - title: IEEE Research Presentaion
+        image: images/IEEE2.png
         content: Published a research paper on "AdaBoost for Parkinson's Disease Detection using Robust Scaler and SFS from Acoustic Features".
         url: "https://ieeexplore.ieee.org/document/9588906"
       # - title: Microsoft Imagine Runner
